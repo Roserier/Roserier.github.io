@@ -8,6 +8,3 @@ app = Flask(__name__)
 def main():
     return jsonify({'hasil' : 'HAHA','status':'1'})
 
-
-if __name__ == '__main__':
-    app.run(debug=False")

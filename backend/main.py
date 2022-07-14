@@ -1,10 +1,11 @@
+import requests
 import json
-from flask import Flask, jsonify, render_template, request
-
-
-app = Flask(__name__)
-
-@app.route('/api',methods=['GET'])
-def main():
-    return jsonify({'hasil' : 'HAHA','status':'1'})
-
+ 
+# Making a get request
+response = requests.get('https://api.github.com')
+ 
+# print response
+print(response)
+ 
+# print json content
+print(response.json())
